@@ -7,5 +7,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: We would like to install pytest
         run: pip install pytest
+      - run: pip install numpy
       - name: Execute pytest as module
         run: python -m pytest -vv
