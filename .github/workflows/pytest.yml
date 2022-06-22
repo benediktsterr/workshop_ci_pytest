@@ -1,0 +1,11 @@
+name: Unit Tests
+on: [push]
+jobs:
+  Run_Pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: We would like to install pytest
+        run: pip install pytest
+      - name: Execute pytest as module
+        run: python -m pytest -vv
