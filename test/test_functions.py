@@ -7,4 +7,4 @@ def test_add():
 def test_show_printing():
   matrix = np.random.rand(5,5)
   print(matrix)
-  assert False
+  assert np.allclose(matrix, matrix + 1)
